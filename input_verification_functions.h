@@ -1,5 +1,3 @@
-#include "warnings_functions.h"
-
 void the_file_was_passed(const int parameters) {
     if (parameters < 2) {
         msg_error("passe um arquivo ao programa.");
