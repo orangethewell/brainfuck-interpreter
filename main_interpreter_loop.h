@@ -1,4 +1,8 @@
-void main_interpreter_loop(char readfile, FILE *file_pointer, char buffer[], int pointer) {
+void main_interpreter_loop(FILE *file_pointer) {
+    char readfile;
+    char buffer[255] = {0};
+    int pointer = 0;
+
     while ((readfile = fgetc(file_pointer)) != EOF) {
         switch (readfile) {
             case '+':
